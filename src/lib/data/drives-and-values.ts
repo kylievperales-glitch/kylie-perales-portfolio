@@ -33,7 +33,7 @@ export const whatDrivesMe: DriveItem[] = [
   {
     index: "06",
     title: "Experiences",
-    body: "Business and physical experience meet at events, hospitality, cities, fashion, and real estate, the places where people actually gather. That intersection is where I pay the closest attention.",
+    body: "Business and physical experience meet at events, hospitality, cities, fashion, and real estate, the places where people come together. That crossover is where I pay the closest attention.",
   },
 ];
 

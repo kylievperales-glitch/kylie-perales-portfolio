@@ -30,8 +30,8 @@ export default function Home() {
       {/* HERO */}
       <section className="border-b border-line">
         <Container className="grid grid-cols-1 gap-10 py-16 md:grid-cols-12 md:gap-8 md:py-24">
-          <div className="md:col-span-7 md:w-fit">
-            <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted md:whitespace-nowrap">
+          <div className="md:col-span-7">
+            <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">
               Entrepreneurship · Strategy · Marketing · Relationship Building
             </p>
             <h1 className="mt-5 text-[15vw] font-black leading-[0.92] tracking-normal sm:text-7xl md:text-8xl">
@@ -105,7 +105,7 @@ export default function Home() {
               <div>
                 <SectionLabel index="01" label="Selected Work" />
                 <h2 className="mt-3 text-3xl tracking-tight md:text-5xl">
-                  Work worth showing.
+                  Work I&apos;m proud of.
                 </h2>
               </div>
               <div className="hidden md:block">
@@ -133,7 +133,7 @@ export default function Home() {
       <section data-surface="ink" className="on-ink bg-ink py-20 text-paper md:py-28">
         <Container>
           <Reveal>
-            <SectionLabel index="02" label="What Drives Me" className="text-muted-on-ink" />
+            <SectionLabel index="02" label="What Drives Me" className="text-muted-on-ink" dark />
             <h2 className="mt-3 max-w-2xl text-3xl tracking-tight md:text-5xl">
               What drives me.
             </h2>
@@ -216,7 +216,7 @@ export default function Home() {
           <Reveal>
             <div className="flex items-end justify-between border-b border-line-on-ink-soft pb-6">
               <div>
-                <SectionLabel index="05" label="Video" className="text-muted-on-ink" />
+                <SectionLabel index="05" label="Video" className="text-muted-on-ink" dark />
                 <h2 className="mt-3 text-3xl tracking-tight md:text-5xl">Events, observed.</h2>
                 <p className="mt-3 max-w-lg text-sm text-muted-on-ink">
                   I go to events and end up thinking about production, branding,

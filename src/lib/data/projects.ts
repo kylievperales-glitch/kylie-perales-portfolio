@@ -227,7 +227,7 @@ export const projects: Project[] = [
     summary:
       "Marketing and social content created while working as a licensed Massachusetts real estate agent, one visible piece of a role built on relationships, prospecting, and client service.",
     context:
-      "Real estate is a relationship business first. The marketing work shown here is what's visible from the outside; the role itself was built on prospecting, client service, and staying current on the market.",
+      "Marketing and social content created while working as a licensed Massachusetts real estate agent, one visible piece of a role built on relationships, prospecting, and client service.",
     myRole:
       "I created social media and marketing content for listings and the brand, alongside client-facing work as a licensed agent.",
     tags: ["Real Estate", "Social Media", "Marketing"],

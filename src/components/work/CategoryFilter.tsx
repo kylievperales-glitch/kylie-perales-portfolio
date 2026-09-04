@@ -52,10 +52,34 @@ export function CategoryFilter({ projects }: { projects: Project[] }) {
         ))}
       </div>
 
-      <div className="mt-10 grid grid-cols-1 items-start gap-x-8 gap-y-14 md:grid-cols-2">
-        {filtered.map((project, i) => (
-          <ProjectCard key={project.slug} project={project} index={i + 1} />
-        ))}
+      <div className="mt-10 grid grid-cols-1 gap-x-8 md:grid-cols-2">
+        <div className="md:hidden">
+          {filtered.map((project, i) => (
+            <div key={project.slug} className="mb-14 last:mb-0">
+              <ProjectCard project={project} index={i + 1} />
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:block">
+          {filtered
+            .map((project, i) => ({ project, i }))
+            .filter((_, i) => i % 2 === 0)
+            .map(({ project, i }) => (
+              <div key={project.slug} className="mb-14 last:mb-0">
+                <ProjectCard project={project} index={i + 1} />
+              </div>
+            ))}
+        </div>
+        <div className="hidden md:block">
+          {filtered
+            .map((project, i) => ({ project, i }))
+            .filter((_, i) => i % 2 === 1)
+            .map(({ project, i }) => (
+              <div key={project.slug} className="mb-14 last:mb-0">
+                <ProjectCard project={project} index={i + 1} />
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );

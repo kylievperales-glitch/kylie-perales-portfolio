@@ -34,7 +34,7 @@ export function SiteHeader() {
           </Link>
 
           <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
-            {NAV_LINKS.slice(1).map((link) => {
+            {NAV_LINKS.map((link) => {
               const active =
                 link.href === "/"
                   ? pathname === "/"
@@ -89,7 +89,7 @@ export function SiteHeader() {
         }`}
       >
         <Container className="flex flex-col py-4">
-          {NAV_LINKS.slice(1).map((link) => (
+          {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
