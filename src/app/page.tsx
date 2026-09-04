@@ -233,7 +233,7 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2">
             {featuredVideos.map((video, i) => (
               <Reveal key={video.slug} delay={i * 80}>
-                <VideoCard video={video} featured />
+                <VideoCard video={video} featured dark />
               </Reveal>
             ))}
           </div>

@@ -1,12 +1,19 @@
-"use client";
-
-import { useState } from "react";
 import type { Video } from "@/lib/types";
 import { YOUTUBE_CHANNEL_URL } from "@/lib/data/videos";
 
-export function VideoCard({ video, featured = false }: { video: Video; featured?: boolean }) {
-  const [playing, setPlaying] = useState(false);
+export function VideoCard({
+  video,
+  featured = false,
+  dark = false,
+}: {
+  video: Video;
+  featured?: boolean;
+  dark?: boolean;
+}) {
   const hasVideo = Boolean(video.youtubeId);
+  const youtubeUrl = video.youtubeId
+    ? `https://www.youtube.com/watch?v=${video.youtubeId}`
+    : undefined;
 
   return (
     <div className="group">
@@ -14,20 +21,13 @@ export function VideoCard({ video, featured = false }: { video: Video; featured?
         className="relative overflow-hidden bg-charcoal"
         style={{ aspectRatio: "16 / 9" }}
       >
-        {playing && video.youtubeId ? (
-          <iframe
-            className="absolute inset-0 h-full w-full"
-            src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?autoplay=1`}
-            title={video.title}
-            allow="accelerate-compute; encrypted-media; picture-in-picture"
-            allowFullScreen
-          />
-        ) : hasVideo ? (
-          <button
-            type="button"
-            onClick={() => setPlaying(true)}
-            className="absolute inset-0 flex h-full w-full items-center justify-center"
-            aria-label={`Play ${video.title}`}
+        {hasVideo ? (
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 block h-full w-full"
+            aria-label={`Watch ${video.title} on YouTube`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element -- external YouTube CDN thumbnail, not an optimizable local/remote asset */}
             <img
@@ -36,14 +36,7 @@ export function VideoCard({ video, featured = false }: { video: Video; featured?
               loading="lazy"
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden
-              className="relative z-10 h-14 w-14 text-paper/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-110"
-            >
-              <polygon points="7,4 20,12 7,20" fill="currentColor" />
-            </svg>
-          </button>
+          </a>
         ) : (
           <a
             href={YOUTUBE_CHANNEL_URL}
@@ -64,6 +57,21 @@ export function VideoCard({ video, featured = false }: { video: Video; featured?
           </a>
         )}
       </div>
+
+      {hasVideo ? (
+        <div className="mt-3 text-right">
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`font-mono text-xs uppercase tracking-[0.14em] underline underline-offset-4 transition-colors ${
+              dark ? "text-muted-on-ink hover:text-paper" : "text-muted hover:text-ink"
+            }`}
+          >
+            Watch on YouTube
+          </a>
+        </div>
+      ) : null}
 
       <div className="mt-4 border-t border-line pt-4">
         <div className="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
