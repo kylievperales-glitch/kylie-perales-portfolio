@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0a0a0a;
+  --color-charcoal: #171717;
+  --color-paper: #f7f5f1;
+  --color-paper-dim: #efece5;
+  --color-line: rgba(10, 10, 10, 0.14);
+  --color-line-soft: rgba(10, 10, 10, 0.08);
+  --color-line-on-ink: rgba(247, 245, 241, 0.2);
+  --color-line-on-ink-soft: rgba(247, 245, 241, 0.1);
+  --color-muted: #625f59;
+  --color-muted-on-ink: #a6a29a;
+  --color-accent: #7a1620;
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+  --font-mono: var(--font-jbmono);
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-charcoal: var(--color-charcoal);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-line: var(--color-line);
+  --color-line-soft: var(--color-line-soft);
+  --color-line-on-ink: var(--color-line-on-ink);
+  --color-line-on-ink-soft: var(--color-line-on-ink-soft);
+  --color-muted: var(--color-muted);
+  --color-muted-on-ink: var(--color-muted-on-ink);
+  --color-accent: var(--color-accent);
+
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.on-ink :focus-visible,
+[data-surface="ink"] :focus-visible {
+  outline-color: var(--color-paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Editorial rule + label helpers reused across the design system */
+.hairline {
+  border-color: var(--color-line);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Reveal-on-scroll utility, toggled by IntersectionObserver in Reveal.tsx */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Marquee for the interests / currently-curious strips */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
