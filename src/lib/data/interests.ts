@@ -66,22 +66,9 @@ export const interests: Interest[] = [
   },
   {
     index: "08",
-    label: "The Ocean",
-    sentence: "I'll always choose the coast.",
-    image: {
-      src: "/images/kylie-ocean.jpg",
-      alt: "Rocky coastline and ocean view",
-      label: "ADD OCEAN / BEACH PHOTO",
-      aspect: "auto",
-      width: 1169,
-      height: 873,
-    },
-  },
-  {
-    index: "09",
     label: "Drive-In Movies",
     sentence:
-      "Entertainment, nostalgia, real estate, hospitality, and a business model that mostly disappeared, I can't stop thinking about whether it should come back.",
+      "Entertainment, nostalgia, real estate, hospitality, and a business model that mostly disappeared, I'd love for there to be more of them but understand the economic reasons for why there are so few.",
     image: {
       alt: "Drive-in movie theater",
       label: "ADD DRIVE-IN MOVIE IMAGE",
