@@ -569,7 +569,7 @@ export const projects: Project[] = [
       height: 794,
     },
     coverClassName: "max-w-[560px] mx-auto",
-    photoGroupsTitle: "Weekly TMT Sector Deliverables",
+    photoGroupsTitle: "TMT Sector Deliverables",
     photoGroups: [
       {
         title: "Deliverable 1 — TMT Industry Overview (10/8/24)",
@@ -646,6 +646,49 @@ export const projects: Project[] = [
             aspect: "auto",
             width: 1530,
             height: 1980,
+          },
+        ],
+      },
+      {
+        title: "Deliverable 5 — Revenue Build Model, Wendy's (11/6/24)",
+        columns: 1,
+        photos: [
+          {
+            src: "/images/bufc-tmt/deliverable-5-table.jpg",
+            alt: "Wendy's revenue build model, ending restaurants, average revenue per store, and total revenues, 2016A through 2028E, recreated from the underlying spreadsheet",
+            label: "ADD DELIVERABLE 5 VISUAL",
+            aspect: "auto",
+            width: 2600,
+            height: 680,
+          },
+        ],
+      },
+      {
+        title: "Deliverable 7 — Cinemark Public Comps (11/20/24)",
+        photos: [
+          {
+            src: "/images/bufc-tmt/deliverable-7-revenue.jpg",
+            alt: "Total revenue (TTM) for Cinemark and comparable companies AMC, Sphere Entertainment, and Liberty Media, in billions",
+            label: "ADD DELIVERABLE 7 CHART 1",
+            aspect: "auto",
+            width: 1400,
+            height: 1000,
+          },
+          {
+            src: "/images/bufc-tmt/deliverable-7-price-change.jpg",
+            alt: "Relative % stock price change over one year for Cinemark, the S&P 500, and the comps set",
+            label: "ADD DELIVERABLE 7 CHART 2",
+            aspect: "auto",
+            width: 1800,
+            height: 1000,
+          },
+          {
+            src: "/images/bufc-tmt/deliverable-7-price-sales.jpg",
+            alt: "Price to sales ratio over one year for Cinemark versus the comps set",
+            label: "ADD DELIVERABLE 7 CHART 3",
+            aspect: "auto",
+            width: 1800,
+            height: 1000,
           },
         ],
       },
