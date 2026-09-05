@@ -74,6 +74,8 @@ export interface Project {
    * `gallery` as their own titled subsections. `columns` overrides the
    * automatic column count (based on photo count) when set. */
   photoGroups?: { title: string; photos: ImageAsset[]; columns?: 1 | 2 | 3 }[];
+  /** Heading shown above `photoGroups`. */
+  photoGroupsTitle?: string;
   documents?: { label: string; url: string }[];
   relatedArticleSlugs?: string[];
   relatedPresentationSlug?: string;

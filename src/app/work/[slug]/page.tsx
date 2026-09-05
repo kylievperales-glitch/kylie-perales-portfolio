@@ -208,7 +208,12 @@ export default async function ProjectPage({
               : "pb-20"
           }
         >
-          <div className="space-y-16">
+          {project.photoGroupsTitle ? (
+            <h2 className="font-mono text-xs uppercase tracking-[0.14em] text-muted">
+              {project.photoGroupsTitle}
+            </h2>
+          ) : null}
+          <div className={`space-y-16 ${project.photoGroupsTitle ? "mt-6" : ""}`}>
             {project.photoGroups.map((group) => {
               const columns =
                 group.columns ??

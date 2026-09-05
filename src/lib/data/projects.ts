@@ -227,9 +227,9 @@ export const projects: Project[] = [
     summary:
       "Marketing and social content created while working as a licensed Massachusetts real estate agent, one visible piece of a role built on relationships, prospecting, and client service.",
     context:
-      "Marketing and social content created while working as a licensed Massachusetts real estate agent, one visible piece of a role built on relationships, prospecting, and client service.",
+      "Apartments I leased, and the marketing and social content behind them, created while working as a licensed Massachusetts real estate agent, a role built on relationships, prospecting, and client service.",
     myRole:
-      "I created social media and marketing content for listings and the brand, alongside client-facing work as a licensed agent.",
+      "I leased apartments and worked directly with clients as a licensed agent, alongside creating social media and marketing content for listings and the brand.",
     tags: ["Real Estate", "Social Media", "Marketing"],
     cover: {
       src: "/images/blackstone-williams-logo.png",
@@ -239,6 +239,7 @@ export const projects: Project[] = [
       width: 680,
       height: 286,
     },
+    photoGroupsTitle: "Examples of Apartments I Leased",
     photoGroups: [
       {
         title: "Example Apartment 1",

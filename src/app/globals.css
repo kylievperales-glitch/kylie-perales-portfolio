@@ -36,8 +36,10 @@
   --font-mono: var(--font-mono);
 }
 
-* {
-  border-color: var(--color-line);
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
 }
 
 html {

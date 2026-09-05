@@ -23,7 +23,7 @@ export default function AboutPage() {
       <Container className="grid grid-cols-1 gap-10 py-16 md:grid-cols-12 md:gap-8 md:py-24">
         <div className="md:col-span-7">
           <SectionLabel label="About" />
-          <h1 className="mt-4 text-4xl leading-[1.02] tracking-tight md:text-6xl">
+          <h1 className="mt-4 text-4xl font-black leading-[1.02] tracking-normal md:text-6xl">
             Business, brands, people, and the ideas that connect them.
           </h1>
           <div className="mt-6 max-w-xl space-y-4 text-lg leading-relaxed text-muted">
@@ -54,7 +54,7 @@ export default function AboutPage() {
             }}
             priority
             grayscale
-            className="border-[3px] border-fuchsia-500"
+            className="border-[6px] border-pink-800"
             sizes="(min-width: 768px) 40vw, 100vw"
           />
         </div>
