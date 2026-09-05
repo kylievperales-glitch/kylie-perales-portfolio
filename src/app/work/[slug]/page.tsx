@@ -87,7 +87,12 @@ export default async function ProjectPage({
       </Container>
 
       <Container className="pb-14">
-        <Media asset={project.cover} priority sizes="100vw" className="w-full" />
+        <Media
+          asset={project.cover}
+          priority
+          sizes="100vw"
+          className={`w-full ${project.coverClassName ?? ""}`}
+        />
       </Container>
 
       {project.tags && project.tags.length > 0 ? (

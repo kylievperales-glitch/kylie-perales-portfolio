@@ -7,7 +7,8 @@ export type Category =
   | "video"
   | "photography"
   | "academic"
-  | "real-estate";
+  | "real-estate"
+  | "finance";
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   strategy: "Strategy",
@@ -19,6 +20,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   photography: "Photography",
   academic: "Academic",
   "real-estate": "Real Estate",
+  finance: "Finance",
 };
 
 export type Aspect = "square" | "portrait" | "landscape" | "wide" | "video" | "auto";
@@ -64,6 +66,9 @@ export interface Project {
   tags?: string[];
   featured?: boolean;
   cover: ImageAsset;
+  /** Extra classes applied to the cover image, e.g. to cap the width of a
+   * small logo mark instead of letting it stretch full-bleed. */
+  coverClassName?: string;
   gallery?: ImageAsset[];
   /** Overrides the default "The Work" heading above `gallery`. */
   galleryTitle?: string;

@@ -2,6 +2,45 @@ import type { Presentation } from "@/lib/types";
 
 export const presentations: Presentation[] = [
   {
+    slug: "bufc-productivity-software",
+    title: "Productivity Software Industry Analysis",
+    organization: "Boston University Finance and Investment Club (BUFC)",
+    team: false,
+    year: "2024",
+    summary:
+      "An industry and company analysis of productivity software, centered on Salesforce, developed as a research deliverable for BUFC's TMT sector team.",
+    approach:
+      "The deck covers the industry's growth drivers, a Salesforce-focused overview, and a Porter's Five Forces analysis of competitive dynamics in productivity software.",
+    slideCount: 3,
+    slides: [
+      {
+        src: "/images/bufc-slides/slide-01.jpg",
+        alt: "Productivity Software Industry Analysis, slide 1",
+        label: "ADD SLIDE 1",
+        aspect: "wide",
+      },
+      {
+        src: "/images/bufc-slides/slide-02.jpg",
+        alt: "Productivity Software Industry Analysis, slide 2",
+        label: "ADD SLIDE 2",
+        aspect: "wide",
+      },
+      {
+        src: "/images/bufc-slides/slide-03.jpg",
+        alt: "Productivity Software Industry Analysis, slide 3",
+        label: "ADD SLIDE 3",
+        aspect: "wide",
+      },
+    ],
+    cover: {
+      src: "/images/bufc-slides/slide-01.jpg",
+      alt: "Productivity Software Industry Analysis, cover slide",
+      label: "ADD PRESENTATION COVER SLIDE",
+      aspect: "wide",
+    },
+    pdfURL: "/documents/bufc-tmt-deliverable-3.pdf",
+  },
+  {
     slug: "chipotle-case-competition",
     title: "Chipotle International Expansion Strategy",
     organization: "Boston University Consulting Group",

@@ -206,14 +206,16 @@ export const projects: Project[] = [
       label: "ADD PARLANCE ARTICLE SCREENSHOT",
       aspect: "landscape",
     },
-    gallery: [
-      {
-        alt: "Website or content screenshot from Parlance",
-        label: "ADD WEBSITE / CONTENT SCREENSHOT",
-        aspect: "wide",
-      },
+    relatedArticleSlugs: [
+      "healthcare-cios-invest-in-conversational-ai-save-money",
+      "parlance-article-1",
+      "parlance-article-2",
+      "parlance-article-3",
+      "parlance-article-4",
+      "parlance-article-5",
+      "parlance-article-6",
+      "parlance-article-7",
     ],
-    relatedArticleSlugs: [],
     ctaLabel: "Read the writing →",
   },
   {
@@ -541,6 +543,141 @@ export const projects: Project[] = [
       },
     ],
     ctaLabel: "View the project",
+  },
+  {
+    slug: "bufc-tmt-sector-analysis",
+    title: "BUFC TMT Sector Analysis",
+    year: "2024",
+    organization: "Boston University Finance and Investment Club (BUFC)",
+    category: ["finance", "academic"],
+    role: "Junior Analyst, Research Analyst",
+    summary:
+      "Weekly research covering the TMT sector, industry trends, macro conditions, and public companies, plus a Cinemark stock pitch built on statement analysis, valuation, growth, and market research.",
+    context:
+      "BUFC's TMT team covered the sector on a weekly cadence, industry themes, macro indicators, and individual public companies, then applied that research toward a full stock pitch.",
+    myRole:
+      "As a Junior Analyst and Research Analyst, I produced weekly analysis of the TMT sector, industry trends, macroeconomic conditions, and public companies, and developed and presented a stock pitch for Cinemark built from statement analysis, valuation, growth, and market research.",
+    approach:
+      "Each week's deliverable paired written or presented analysis with the research behind it, industry overviews, macro data, company memos, and financial models, building toward the final stock pitch.",
+    tags: ["Equity Research", "Financial Modeling", "Valuation", "Financial Analysis"],
+    cover: {
+      src: "/images/bufc-logo.png",
+      alt: "Boston University Finance and Investment Club (BUFC) logo",
+      label: "ADD BUFC LOGO",
+      aspect: "auto",
+      width: 780,
+      height: 794,
+    },
+    coverClassName: "max-w-[560px] mx-auto",
+    photoGroupsTitle: "Weekly TMT Sector Deliverables",
+    photoGroups: [
+      {
+        title: "Deliverable 1 — TMT Industry Overview (10/8/24)",
+        photos: [
+          {
+            src: "/images/bufc-tmt/deliverable-1-page-1.jpg",
+            alt: "TMT Deliverable 1, TMT Industry Overview, page 1",
+            label: "ADD DELIVERABLE 1 PAGE 1",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+          {
+            src: "/images/bufc-tmt/deliverable-1-page-2.jpg",
+            alt: "TMT Deliverable 1, TMT Industry Overview, page 2, works cited",
+            label: "ADD DELIVERABLE 1 PAGE 2",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+        ],
+      },
+      {
+        title: "Deliverable 2 — S&P 500 Index & Macro Conditions (10/15/24)",
+        photos: [
+          {
+            src: "/images/bufc-tmt/deliverable-2-page-1.jpg",
+            alt: "TMT Deliverable 2, S&P 500 Index and macro conditions, page 1",
+            label: "ADD DELIVERABLE 2 PAGE 1",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+          {
+            src: "/images/bufc-tmt/deliverable-2-page-2.jpg",
+            alt: "TMT Deliverable 2, S&P 500 Index and macro conditions, page 2",
+            label: "ADD DELIVERABLE 2 PAGE 2",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+          {
+            src: "/images/bufc-tmt/deliverable-2-page-3.jpg",
+            alt: "TMT Deliverable 2, S&P 500 Index and macro conditions, page 3, works cited",
+            label: "ADD DELIVERABLE 2 PAGE 3",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+        ],
+      },
+      {
+        title: "Deliverable 4 — Ziff Davis (ZD) Stock Memo (10/29/24)",
+        columns: 1,
+        photos: [
+          {
+            src: "/images/bufc-tmt/deliverable-4-page-1.jpg",
+            alt: "TMT Deliverable 4, Ziff Davis stock memo",
+            label: "ADD DELIVERABLE 4",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+        ],
+      },
+      {
+        title: "Deliverable 6 — Netflix (NFLX) Q3 2024 Earnings Analysis",
+        columns: 1,
+        photos: [
+          {
+            src: "/images/bufc-tmt/deliverable-6-page-1.jpg",
+            alt: "TMT Deliverable 6, Netflix Q3 2024 earnings analysis",
+            label: "ADD DELIVERABLE 6",
+            aspect: "auto",
+            width: 1530,
+            height: 1980,
+          },
+        ],
+      },
+    ],
+    documents: [
+      {
+        label: "TMT Deliverable 1 — TMT Industry Overview (PDF)",
+        url: "/documents/bufc-tmt-deliverable-1.pdf",
+      },
+      {
+        label: "TMT Deliverable 2 — S&P 500 & Macro Conditions (PDF)",
+        url: "/documents/bufc-tmt-deliverable-2.pdf",
+      },
+      {
+        label: "TMT Deliverable 4 — Ziff Davis (ZD) Stock Memo (PDF)",
+        url: "/documents/bufc-tmt-deliverable-4.pdf",
+      },
+      {
+        label: "TMT Deliverable 5 — Revenue Build Model, Wendy's (XLSX)",
+        url: "/documents/bufc-tmt-deliverable-5.xlsx",
+      },
+      {
+        label: "TMT Deliverable 6 — Netflix (NFLX) Earnings Analysis (PDF)",
+        url: "/documents/bufc-tmt-deliverable-6.pdf",
+      },
+      {
+        label: "TMT Deliverable 7 — Cinemark Public Comps, supporting the stock pitch (XLSX)",
+        url: "/documents/bufc-tmt-deliverable-7.xlsx",
+      },
+    ],
+    relatedPresentationSlug: "bufc-productivity-software",
+    ctaLabel: "See the research",
   },
 ];
 
