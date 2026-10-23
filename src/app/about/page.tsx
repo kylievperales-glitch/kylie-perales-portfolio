@@ -29,7 +29,7 @@ export default function AboutPage() {
           <div className="mt-6 max-w-xl space-y-4 text-lg leading-relaxed text-muted">
             <p>
               I graduated from Boston University&apos;s Questrom School of Business
-              in May 2026, in three years. Along the way, I co-founded a
+              in August 2026, in three years. Along the way, I co-founded a
               logistics startup, wrote for a marketing team, and worked as a
               licensed real estate agent in Boston.
             </p>

@@ -177,3 +177,14 @@ export interface TimelineEntry {
   /** Shown when this entry is expanded. */
   body: string;
 }
+
+export interface Website {
+  slug: string;
+  title: string;
+  year?: string;
+  description: string;
+  /** Live link to the site, if it's public. */
+  url?: string;
+  /** Shown one at a time with previous/next buttons; the first is the cover. */
+  screenshots: ImageAsset[];
+}

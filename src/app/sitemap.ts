@@ -4,7 +4,7 @@ import { projects } from "@/lib/data/projects";
 import { articles } from "@/lib/data/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/work", "/writing", "/video", "/photography", "/about", "/contact"];
+  const staticRoutes = ["", "/work", "/writing", "/creativity", "/video", "/photography", "/about", "/contact"];
 
   const dynamicRoutes = [
     ...projects.map((p) => `/work/${p.slug}`),

@@ -52,6 +52,9 @@ export function SiteFooter() {
             <Link href="/writing" className="hover:text-paper">
               Writing
             </Link>
+            <Link href="/creativity" className="hover:text-paper">
+              Creativity
+            </Link>
             <Link href="/video" className="hover:text-paper">
               Video
             </Link>
